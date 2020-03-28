@@ -284,7 +284,10 @@ end
 # Runs methods to run and configure a new vm from the configuration file
 def run(scenario, project_dir, options)
   build_config(scenario, project_dir, options)
-  build_vms(scenario, project_dir, options)
+  # We are commenting out the build_vms call, because we want to trouble shoot 
+  # issues with importing the VMs for now
+  # TESTIG TESTS
+  #build_vms(scenario, project_dir, options)
 end
 
 def default_project_dir

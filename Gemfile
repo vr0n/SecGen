@@ -28,7 +28,7 @@ gem 'digest-siphash'
 gem 'scrypt'
 gem 'braille', :git => "http://github.com/nicanor/braille.git"
 gem 'bases'
-gem 'huffman'
+#gem 'huffman'
 gem 'ruby-graphviz'
 gem 'rsa'
 gem 'gpgmeh'

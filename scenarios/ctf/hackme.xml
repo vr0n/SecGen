@@ -17,39 +17,6 @@ Happy hacking!
   <type>hack-ctf</type>
   <difficulty>easy</difficulty>
 
-  <system>
-    <system_name>attack_vm</system_name>
-    <base distro="Kali" name="MSF"/>
-
-
-    <input into_datastore="IP_addresses">
-      <!-- 0 attack_vm -->
-      <value>172.16.0.2</value>
-      <!-- 1 hackme_server -->
-      <value>172.16.0.3</value>
-      <!-- 2 hackmetoo_server -->
-      <value>172.16.0.4</value>
-      <!-- 3 hackmethree_server -->
-      <value>172.16.0.5</value>
-    </input>
-
-    <utility module_path=".*/iceweasel">
-      <input into="accounts">
-        <value>{"username":"root","password":"toor","super_user":"","strings_to_leak":[],"leaked_filenames":[]}</value>
-      </input>
-      <input into="autostart">
-        <value>false</value>
-      </input>
-    </utility>
-
-    <utility module_path=".*/kali_top10"/>
-    <network type="private_network">
-      <input into="IP_address">
-        <datastore access="0">IP_addresses</datastore>
-      </input>
-    </network>
-  </system>
-
   <!-- a vulnerability that is remotely exploitable for user level access, then can be escalated to root -->
   <system>
     <system_name>hackme_server</system_name>

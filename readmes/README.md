@@ -1,5 +1,8 @@
 # Security Scenario Generator (SecGen)
 
+## Note
+With the exception of this section, the below README is the complete README from the original SecGen project so the original project's owners still get their due credit. The README for this version of the project is in README-vr0n.md
+
 ## Summary
 SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.
 
